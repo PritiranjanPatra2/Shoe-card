@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to right, #b92b27, #1565c0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 70vh;
+        width: 70%;
+        background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+        display: flex;
+        flex-direction: column;
+      }
+      .box h1,
+      .box p {
+        width: 40%;
+        padding: 1%;
+      }
+      img {
+        position: absolute;
+        right: 8%;
+        top: 8%;
+        height: 300px;
+        width: 500px;
+      }
+      /* @keyframes bottomToLeft {
+        from{
+            right: 5%;
+        top: 8%;
+        }
+        to{
+            width: 800px;
+            height: 600px;
+            top: 10%;
+            right: 10%;
+        }
+      } */
+      img:hover{
+        /* animation-name: bottomToLeft;
+        animation-duration: 1s; */
+        /* transition-property: all;
+        transition-duration: 1s; */
+        transform: scale(1.7) translate(-50px, 20px);
+        transition: all;
+        transition-duration: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Shoe-1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo impedit
+          corrupti ducimus soluta autem tempore sequi animi veniam facere
+          consequuntur reprehenderit necessitatibus eius excepturi eligendi non,
+          deleniti ea alias ratione.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,
+          harum?
+        </p>
+        <img src="shoe-1.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
